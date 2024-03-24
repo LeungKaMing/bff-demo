@@ -22,9 +22,9 @@ services:
       start_interval: 1s
       retries: 30
     volumes:
-      - "mongo1_data:/data/db"
-      - "mongo1_config:/data/configdb"
+      - "mongo_data:/data/db"
+      - "mongo_config:/data/configdb"
 
 volumes:
-  mongo1_data:
-  mongo1_config:
+  mongo_data:
+  mongo_config:
