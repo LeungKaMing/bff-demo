@@ -12,6 +12,9 @@ COPY ./bff /bff
 
 RUN npm i -g pnpm && pnpm i
 
+# 初始化prisma db
+RUN pnpx prisma generate
+
 # 暴露应用程序端口
 EXPOSE 3001
 
